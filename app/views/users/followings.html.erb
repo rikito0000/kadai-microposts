@@ -12,7 +12,7 @@
 " alt="">
       </div>
     </div>
-      
+    
 <%= render 'relationships/follow_button', user: @user %>
 
   </aside>
@@ -41,7 +41,7 @@
 </span></a></li>
     </ul>
     
-<%= render 'microposts/microposts', microposts: @microposts %>
+<%= render 'users', users: @followings %>
 
   </div>
 </div>

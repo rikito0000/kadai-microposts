@@ -7,6 +7,7 @@ class RelationshipsController < ApplicationController
     flash[:success] = 'ユーザをフォローしました。'
     redirect_to user
   end
+  
 
   def destroy
     user = User.find(params[:follow_id])

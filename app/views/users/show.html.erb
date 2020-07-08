@@ -15,7 +15,7 @@
       
 <%= render 'relationships/follow_button', user: @user %>
 
-  </aside>
+   </aside>
   <div class="col-sm-8">
     <ul class="nav nav-tabs nav-justified mb-3">
       <li class="nav-item"><a href="
@@ -39,12 +39,15 @@
 ">Followers  <span class="badge badge-secondary">
 <%= @count_followers %>
 </span></a></li>
-  　　<li class="nav-item"><a href="
+      <li class="nav-item"><a href="
 <%= likes_user_path(@user) %>
 " class="nav-link 
 <%= 'active' if current_page?(likes_user_path(@user)) %>
-">Favorites </a></li>
-</ul>
+">Favorites <span class="badge badge-secondary">
+<%=  @count_favorites  %>
+</span></a></li>
+    
+        </ul>
     
 <%= render 'microposts/microposts', microposts: @microposts %>
 

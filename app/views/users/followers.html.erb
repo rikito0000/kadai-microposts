@@ -43,7 +43,9 @@
 <%= likes_user_path(@user) %>
 " class="nav-link 
 <%= 'active' if current_page?(likes_user_path(@user)) %>
-">Favorites </a></li>
+">Favorites <span class="badge badge-secondary">
+<%=  @count_favorites  %>
+</span></a></li>
     
 
     </ul>

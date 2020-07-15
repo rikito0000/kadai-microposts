@@ -16,7 +16,7 @@ ActiveRecord::Schema.define(version: 2020_06_29_101256) do
     t.bigint "user_id"
     t.bigint "micropost_id"
     t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "updated_at", null: fals
     t.index ["micropost_id"], name: "index_favorites_on_micropost_id"
     t.index ["user_id", "micropost_id"], name: "index_favorites_on_user_id_and_micropost_id", unique: true
     t.index ["user_id"], name: "index_favorites_on_user_id"
